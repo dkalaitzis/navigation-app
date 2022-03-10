@@ -47,7 +47,7 @@ const NavigationBar = () => {
             <img
               onClick={toggleNav}
               className="toggle-btn"
-              alt="img"
+              alt="#img"
               src="assets/toggle-nav.png"
             ></img>
           )}
@@ -55,21 +55,8 @@ const NavigationBar = () => {
       </div>
 
       {/* Show Nav Menu Dropdown */}
-      {toggleMenu & (screenWidth < 500) && (
+      {toggleMenu && (screenWidth < 500) && (
         <div className="row">
-          <a className="col events-btn" href="#events">
-            <p className="second-sites-btn">Events</p>
-          </a>
-          <a className="col club-btn" href="#club">
-            <p className="second-sites-btn">Club</p>
-          </a>
-          <a className="col shop-btn" href="shop">
-            <p className="second-sites-btn">Shop</p>
-          </a>
-          <a className="col youtube-btn" href="youtube">
-            <p className="second-sites-btn">YouTube</p>
-          </a>
-
           <ul className="list">
             {/* Search Bar */}
             <li className="items">
