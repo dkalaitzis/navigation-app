@@ -1,2 +1,5 @@
-# navigation
- 
+clone repository > cd in folder
+
+To run the app:
+npm i 
+npm start
